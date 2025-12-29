@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2nd year Engineering student building practical projects in Python, Machine Learning, and Web Development">
+    <meta name="keywords" content="engineering student, python, machine learning, web development, portfolio">
+    <meta name="author" content="Khushal Mojidra">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Khushal Mojidra | Engineering Student Portfolio">
+    <meta property="og:description" content="Learning by building - Python apps, ML experiments, and web platforms">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Khushal Mojidra | Engineering Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Skip to Main Content (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="/" class="logo" aria-label="Home">
+                    <span class="logo-text">KM.</span>
+                    <span class="logo-subtitle">Student Portfolio</span>
+                </a>
+                <!-- Desktop Navigation -->
+<nav aria-label="Main navigation">
+    <ul class="nav-menu" role="list">
+        <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-nav="contact">Connect</a></li>
+    </ul>
+</nav>
+                
+                <!-- Theme Toggle & CTA -->
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                    
+                    <a href="#projects" class="btn btn-primary btn-sm">View Projects</a>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <a href="/" class="logo">KM.</a>
+                <button class="menu-close" id="menuClose" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav" role="list" aria-label="Mobile navigation">
+                <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Connect</a></li>
+            </ul>
+            <div class="mobile-contact">
+                <a href="mailto:mojidrakhushal3707@gmail.com" class="email-link">mojidrakhushal3707@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://github.com/khush3707" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/khushal-mojidra-393968376/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" data-section="home">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="hero-badge">
+                            <span class="badge">2nd Year Engineering Student</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Learning by <span class="text-gradient">Building</span>
+                        </h1>
+                        <p class="hero-description">
+                            I'm Khushal Mojidra, a 2nd-year engineering student building practical projects in <strong>Python</strong>, 
+                            <strong>Machine Learning</strong>, and <strong>Web Development</strong>.I learn by building real projects, breaking them, and fixing them until the logic makes sense.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary btn-lg">
+                                <span>See My Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/khush3707" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                                <span>View GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat"></div>
+                            <div class="stat"></div>
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Years Learning</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <div class="image-placeholder">
+                                    <div class="profile-shape">
+                                        <div class="shape shape-1"></div>
+                                        <div class="shape shape-2"></div>
+                                        <div class="shape shape-3"></div>
+                                        <div class="profile-avatar">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Khushal Mojidra</h3>
+                                <p>Computer Engineering Student</p>
+                                <div class="profile-location">
+                                    <i class="fas fa-university"></i>
+                                    <span>IITRAM, Ahmedabad</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-tech-stack">
+                            <div class="tech-icons">
+                                <div class="tech-icon" title="Python">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="tech-icon" title="JavaScript">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="tech-icon" title="HTML/CSS">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="tech-icon" title="Git">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div class="tech-icon" title="Machine Learning">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding" data-section="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">From Theory to Practice</h2>
+                    <p class="section-description">
+                        Currently in my 2nd year of engineering, I bridge classroom concepts with hands-on projects. 
+                        My focus is on understanding how technology solves problems.
+                    </p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content" data-aos="fade-right">
+                        <h3>My Learning Journey</h3>
+                        <p>
+                            I believe the best way to learn is by doing. Instead of just studying theory, I build projects that help me understand how things actually work.
+                        </p>
+                        <p>Initially, I relied too much on tutorials. Over time, I realized this limited my thinking, so I now force myself to build features without guidance to test my understanding.</p>
+                        <p>
+                           Each project teaches me something new—whether it's understanding algorithms, designing user interfaces, or debugging code until it works.
+                        </p>
+                        
+                        <div class="experience-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">Present</div>
+                                <div class="timeline-content">
+                                    <h4>Computer Engineering Student</h4>
+                                    <p class="company">Institute of Infrastructure, Technology, Research and Management (IITRAM)</p>
+                                    <p>Learning computer science fundamentals while building side projects to apply concepts.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024-2025</div>
+                                <div class="timeline-content">
+                                    <h4>Started Coding Journey</h4>
+                                    <p class="company">Self-Taught</p>
+                                    <p>Began learning Python and web development through online resources and personal projects.</p>
+                                    <p>Also learn Machin Learning and React_js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills" data-aos="fade-left" data-aos-delay="200">
+                        <h3>Current Focus Areas</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python Programming</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++  DSA</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Web Development</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Machine Learning Basics</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & Version Control</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding" data-section="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Projects</span>
+                    <h2 class="section-title">Hands-On Learning</h2>
+                    <p class="section-description">
+                        These are projects I've built to understand concepts better. Each one taught me something valuable.
+                    </p>
+                </div>
+                
+                <!-- Project Filters -->
+                <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="ml">ML</button>
+                </div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding" data-section="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Skills</span>
+                    <h2 class="section-title">What I'm Learning</h2>
+                    <p class="section-description">
+                        Currently building my technical foundation. Always adding new skills to this list.
+                    </p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skill-list" role="list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>C++ Basics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <ul class="skill-list" role="list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript ES6+</li>
+                            <li>Responsive Design</li>
+                            <li>DOM Manipulation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Practices</h3>
+                        </div>
+                        <ul class="skill-list" role="list">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Command Line</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <ul class="skill-list" role="list">
+                            <li>Machine Learning Basics</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>React Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="contact" class="contact section-padding" data-section="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="section-header">
+                            <span class="section-label">Connect</span>
+                            <h2 class="section-title">Let's Learn Together</h2>
+                            <p class="section-description">
+                                I'm always looking to connect with fellow students, learn from others, 
+                                and explore opportunities to grow.
+                            </p>
+                        </div>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:mojidrakhushal3707@gmail.com">mojidrakhushal3707@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/khushal-mojidra-393968376/" target="_blank" rel="noopener noreferrer">linkedin.com/in/khushal-mojidra</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/khush3707" target="_blank" rel="noopener noreferrer">github.com/khush3707</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="connect-message">
+                            <h4>Why Connect?</h4>
+                            <p>
+                                I'm actively looking for:
+                            </p>
+                            <ul role="list">
+                                <li>Study groups & coding partners</li>
+                                <li>Internship opportunities</li>
+                                <li>Project feedback</li>
+                                <li>Learning resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div id="formStatus"></div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a topic</option>
+                                    <option value="project-feedback">Project Feedback</option>
+                                    <option value="study-group">Study Group</option>
+                                    <option value="internship">Internship Inquiry</option>
+                                    <option value="resource-share">Resource Sharing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, learning journey, or any opportunities..."></textarea>
+                            </div>
+                            
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                                <p class="form-note">
+                                    I'll respond within 1-2 days. Let's learn together!
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">KM.</a>
+                    <p class="footer-description">
+                        Building my skills one project at a time.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Portfolio</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Connect</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="https://github.com/khush3707" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/khushal-mojidra-393968376/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Khushal Mojidra. Built for learning and growth.</p>
+                <p class="footer-built">
+                    Made with <i class="fas fa-heart"></i> by a student developer
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
