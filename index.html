@@ -39,10 +39,9 @@
         <div class="container">
             <nav class="navbar">
                 <!-- Logo -->
-                <a href="/" class="logo" aria-label="Home">
-                    <span class="logo-text">KM.</span>
-                    <span class="logo-subtitle">Student Portfolio</span>
-                </a>
+                 <div class="logo" aria-label="Home">
+                    <span class="logo-text">Khushal Mojidra</span>
+                </div>
                 <!-- Desktop Navigation -->
 <nav aria-label="Main navigation">
     <ul class="nav-menu" role="list">
@@ -151,7 +150,7 @@
                                         <div class="shape shape-2"></div>
                                         <div class="shape shape-3"></div>
                                         <div class="profile-avatar">
-                                            <i class="fas fa-graduation-cap"></i>
+                                        <img src="Gemini_Generated_Image_pazo32pazo32pazo.png" alt="Khushal Mojidra" class="profile-photo">
                                         </div>
                                     </div>
                                 </div>
@@ -438,7 +437,7 @@
                     </div>
                     
                     <div class="contact-form-container" data-aos="fade-left">
-                        <form id="contactForm" class="contact-form">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                             <div id="formStatus"></div>
                             
                             <div class="form-row">
@@ -509,16 +508,13 @@
                         <h4>Resources</h4>
                         <a href="https://github.com/khush3707" target="_blank" rel="noopener noreferrer">GitHub</a>
                         <a href="https://www.linkedin.com/in/khushal-mojidra-393968376/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <a href="https://docs.google.com/document/d/1zFEox4676L46bmQRq5_1Tpd5ChPsHMsV/edit?usp=drive_link&ouid=103008534493135282319&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Resume</a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <p>&copy; <span id="currentYear"></span> Khushal Mojidra. Built for learning and growth.</p>
-                <p class="footer-built">
-                    Made with <i class="fas fa-heart"></i> by a student developer
-                </p>
             </div>
         </div>
     </footer>
@@ -530,6 +526,13 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Add before your script.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("9WtPxz3lT2_trRCx7");
+    })();
+</script>
     <script src="js/script.js"></script>
 </body>
 </html>

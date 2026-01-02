@@ -390,56 +390,43 @@ function clearFieldError(field) {
 }
 
 async function handleFormSubmit(e) {
-    e.preventDefault();
-    
+   e.preventDefault();
     const form = e.target;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
     
-    // Validate all required fields
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let isValid = true;
-    
-    inputs.forEach(input => {
-        if (!validateField({ target: input })) {
-            isValid = false;
-        }
-    });
-    
-    if (!isValid) {
-        showFormStatus('Please fill in all required fields correctly.', 'error');
-        return;
-    }
-    
-    // Disable submit button
+    // Show loading state
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitBtn.disabled = true;
     
     try {
-        // Simulate form submission for demo
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        // Send email using EmailJS
+        const response = await emailjs.sendForm(
+            'YOUR_SERVICE_ID',     // Your EmailJS Service ID
+            'YOUR_TEMPLATE_ID',    // Your EmailJS Template ID
+            form                   // The HTML form element
+        );
         
-        // For demo purposes
-        const isSuccess = Math.random() > 0.2; // 80% success rate for demo
+        console.log('Email sent successfully:', response);
         
-        if (isSuccess) {
-            showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
-            form.reset();
-        } else {
-            throw new Error('Simulated network error');
-        }
+        // Show success message
+        showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
+        
+        // Reset the form
+        form.reset();
+        
     } catch (error) {
         console.error('Form submission error:', error);
+        
+        // Show error message
         showFormStatus('Something went wrong. Please try again later.', 'error');
+        
     } finally {
-        // Re-enable submit button
+        // Reset button state
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
     }
 }
-
 function showFormStatus(message, type) {
     const statusEl = document.getElementById('formStatus');
     if (!statusEl) return;
