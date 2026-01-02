@@ -390,7 +390,7 @@ function clearFieldError(field) {
 }
 
 async function handleFormSubmit(e) {
-   e.preventDefault();
+    e.preventDefault();
     const form = e.target;
     
     // Show loading state
@@ -400,24 +400,28 @@ async function handleFormSubmit(e) {
     submitBtn.disabled = true;
     
     try {
-        // Send email using EmailJS
-        const response = await emailjs.sendForm(
-            'YOUR_SERVICE_ID',     // Your EmailJS Service ID
-            'YOUR_TEMPLATE_ID',    // Your EmailJS Template ID
-            form                   // The HTML form element
-        );
+        // Submit to Formspree
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
         
-        console.log('Email sent successfully:', response);
-        
-        // Show success message
-        showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
-        
-        // Reset the form
-        form.reset();
+        if (response.ok) {
+            // Show success message
+            showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
+            // Reset the form
+            form.reset();
+        } else {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Form submission failed');
+        }
         
     } catch (error) {
         console.error('Form submission error:', error);
-        
         // Show error message
         showFormStatus('Something went wrong. Please try again later.', 'error');
         
