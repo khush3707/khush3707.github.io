@@ -411,15 +411,15 @@ async function handleFormSubmit(e) {
         });
         
         if (response.ok) {
-            // Show success message
-            showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
-            // Reset the form
-            form.reset();
-        } else {
-            const errorData = await response.json();
-            throw new Error(errorData.error || 'Form submission failed');
-        }
-        
+    showFormStatus(
+        "Thanks for reaching out! I'll get back to you soon.",
+        "success"
+    );
+        form.reset();
+    } else {
+        throw new Error("Form submission failed");
+    }
+
     } catch (error) {
         console.error('Form submission error:', error);
         // Show error message
